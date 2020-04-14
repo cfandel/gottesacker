@@ -11,7 +11,10 @@ Many possible conduit networks are generated in SKS based on the geologic model,
 <br>*SKS:* Stochastic Karst Simulator - pseudo-genetic 3D stochastic modeling of karst aquifers from University of Neuchatel. https://doc.rero.ch/record/31792
 <br>*SWMM:* Storm Water Management Model - runoff pipe flow model from US EPA. https://www.epa.gov/water-research/storm-water-management-model-swmm
 
-*Primary project notebook:* gott_vX.ipynb
+### Primary project notebooks:
+
+- ensemble_generator.ipynb: this is the bulk of the project code to generate an ensemble of models
+- ensemble_viewer.ipynb: this is the plotting & analysis once the ensemble has already been generated
 
 ### Modules being worked on:
 
