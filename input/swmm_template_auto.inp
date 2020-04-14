@@ -1,0 +1,115 @@
+[TITLE]
+;;Project title/notes
+Template input file for Gottesacker karst system. 
+Based on input files created by Zhao Chen.
+Modified by Chloe Fandel:
+- comments added
+- tables spaced to be legible
+- column headers condensed to one line 
+- sections replaced with placeholder 
+- enabled sections:
+-- raingages --subcatchments --subareas -- infiltration --junctions --outfalls --conduits --coordinates   --xsections --inflows --timeseries --report 
+
+[OPTIONS]
+FLOW_UNITS           LPS
+INFILTRATION         HORTON
+FLOW_ROUTING         DYNWAVE
+START_DATE           11/14/2013
+START_TIME           00:00:00
+REPORT_START_DATE    11/15/2013
+REPORT_START_TIME    00:00:00
+END_DATE             10/11/2014
+END_TIME             00:00:00
+SWEEP_START          01/01
+SWEEP_END            12/31
+DRY_DAYS             0
+REPORT_STEP          01:00:00
+WET_STEP             00:30:00
+DRY_STEP             01:00:00
+ROUTING_STEP         0:00:30
+ALLOW_PONDING        NO
+INERTIAL_DAMPING     PARTIAL
+VARIABLE_STEP        1.00
+LENGTHENING_STEP     0
+MIN_SURFAREA         0
+NORMAL_FLOW_LIMITED  BOTH
+SKIP_STEADY_STATE    NO
+FORCE_MAIN_EQUATION  D-W
+LINK_OFFSETS         ELEVATION
+MIN_SLOPE            0
+
+[EVAPORATION]
+;;Type       Parameters
+;;---------- ----------
+CONSTANT     0.0
+DRY_ONLY     NO
+
+[RAINGAGES]
+;;Name           RainType  tIntvl SnowCtch DataSource    
+;;-------------- --------- ------ -------- ----------
+raingages
+
+[SUBCATCHMENTS]
+;;Name           Raingage         Outlet           TotArea  PctImpv  Width     PctSlope CurbLen  SnowPack    
+;;-------------- ---------------- ---------------- -------- -------- --------- -------- -------- --------
+subcatchments
+
+[SUBAREAS]
+;;Subcatchment   N-Imperv   N-Perv     S-Imperv   S-Perv     PctZero    RouteTo    PctRouted 
+;;-------------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+subareas
+
+[INFILTRATION]
+;;Subcatchment   MaxRate    MinRate    Decay      DryTime    MaxInfil  
+;;-------------- ---------- ---------- ---------- ---------- ----------
+infiltration
+
+[JUNCTIONS]
+;;Name           InvertElev MaxDepth   InitDepth  SurDepth   Aponded      
+;;-------------- ---------- ---------- ---------- ---------- ----------
+junctions
+
+[OUTFALLS]
+;;Name           InvertElev OutType    Stage            TideGate
+;;-------------- ---------- ---------- ---------------- ----
+outfalls
+
+[CONDUITS]
+;;Name           InNode           OutNode          Length     ManningN   InOffset   OutOffset  InitFlow   MaxFlow      
+;;-------------- ---------------- ---------------- ---------- ---------- ---------- ---------- ---------- ----------
+conduits
+
+[XSECTIONS]
+;;Link           Shape        Geom1            Geom2      Geom3      Geom4      Barrels    Culvert   
+;;-------------- ------------ ---------------- ---------- ---------- ---------- ---------- ----------
+xsections
+
+[LOSSES]
+;;Link           Inlet      Outlet     Average    Flap Gate 
+;;-------------- ---------- ---------- ---------- ----------
+
+[INFLOWS]
+;;Node           Parameter        TimeSeries       ParType  UnitFactor ScaleFactor BaseVal  BasePattern
+;;-------------- ---------------- ---------------- -------- ---------- ----------- -------- --------
+inflows
+
+[TIMESERIES]
+;;Name           Date       Time       Value     
+;;-------------- ---------- ---------- ----------
+timeseries
+
+[REPORT]
+;;Type              Option
+;;----------------- -----------------------------------------------------------------------
+report
+ 
+[TAGS]
+
+[MAP]
+DIMENSIONS 578728.850 5239974.270 591651.126 5249647.456
+Units      Meters
+ 
+[COORDINATES]
+;;Node           X-Coord            Y-Coord  
+;;-------------- ------------------ ------------------
+coordinates
