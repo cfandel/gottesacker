@@ -16,7 +16,7 @@ Many possible conduit networks are generated in SKS based on the geologic model,
 - ensemble_generator.ipynb: this is the bulk of the project code to generate an ensemble of models
 - ensemble_viewer.ipynb: this is the plotting & analysis once the ensemble has already been generated
 
-### Modules being worked on:
+### Modules:
 
 *For GemPy:*
 - mapping.py: additional visualization functions to crop the 3D model based on the land surface or irregularly-shaped boundaries, to export and import gslib files, and to plot custom diagonal cross-sections
