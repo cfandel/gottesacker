@@ -1,0 +1,9 @@
+ID,X,Y,Z,formation,azimuth,dip,polarity,fault,source,type,use
+XS-0,582970,5244930,2102,limestone,0,0,1,n,,xsec,n
+XS-1,582970,5244930,2102,shale,0,0,1,n,,xsec,n
+I-0,0,40,40,limestone,0,0,1,n,,interface,y
+I-1,100,40,10,limestone,0,0,1,n,,interface,y
+I-2,0,40,0,shale,0,0,1,n,,interface,y
+I-3,100,40,0,shale,0,0,1,n,,interface,y
+SD-0,50,40,25,limestone,90,11,1,n,,orientation,y
+SD-1,50,40,0,shale,90,11,1,n,,orientation,y
